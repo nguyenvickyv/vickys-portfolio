@@ -7,18 +7,21 @@ import {
   Divider,
   Button
 } from '@chakra-ui/react'
+import Section from '../components/section'
 
 const NotFound = () => {
   return (
     <Container>
+      <Section delay={0.1}>
       <Heading as="h1">Not found</Heading>
-      <Text>The page you&apos;re looking for was not found.</Text>
+      <Text>404 Error: This page is on a coffee break. Maybe grab one too?</Text>
       <Divider my={6} />
       <Box my={6} align="center">
-        <Button as={NextLink} href="/" colorScheme="teal">
+        <Button as={NextLink} href="/index" colorScheme="teal">
           Return to home
         </Button>
       </Box>
+      </Section>
     </Container>
   )
 }
