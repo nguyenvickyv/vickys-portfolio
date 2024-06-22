@@ -17,7 +17,7 @@ const NotFound = () => {
       <Text>404 Error: This page is on a coffee break. Maybe grab one too?</Text>
       <Divider my={6} />
       <Box my={6} align="center">
-        <Button as={NextLink} href="/index" colorScheme="teal">
+        <Button as={NextLink} href="/index" colorScheme="pink">
           Return to home
         </Button>
       </Box>

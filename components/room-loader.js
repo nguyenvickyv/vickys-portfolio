@@ -1,18 +1,20 @@
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { Box, Spinner } from '@chakra-ui/react'
 
+// RoomSpinner Component
 export const RoomSpinner = () => (
   <Spinner
     size="xl"
     position="absolute"
     left="50%"
     top="50%"
-    ml="calc(0px - var(--spinner-size) / 2)"
-    mt="calc(0px - var(--spinner-size))"
+    ml="-1.5rem" // Center horizontally by offsetting half the width of the spinner
+    mt="-1.5rem" // Center vertically by offsetting half the height of the spinner
   />
 )
 
-export const RoomContainer = forwardRef(({ children }, ref) => (
+// RoomContainer Component
+export const RoomContainer = forwardRef((props, ref) => (
   <Box
     ref={ref}
     className="room"
@@ -23,10 +25,11 @@ export const RoomContainer = forwardRef(({ children }, ref) => (
     h={[280, 480, 640]}
     position="relative"
   >
-    {children}
+    {props.children}
   </Box>
 ))
 
+// Loader Component
 const Loader = () => {
   return (
     <RoomContainer>

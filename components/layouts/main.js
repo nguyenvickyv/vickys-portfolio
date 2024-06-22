@@ -6,11 +6,10 @@ import Footer from '../footer'
 import Loader from '../room-loader'
 
 
-const myRoom = dynamic(() => import('../room'), {
+const MyRoom = dynamic(() => import('../room'), {
   ssr: false,
   loading: () => <Loader />
 })
-
 
 const Main = ({ children, router }) => {
   return (
@@ -30,10 +29,8 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-
-
+        <MyRoom />
         {children}
-
         <Footer />
       </Container>
     </Box>

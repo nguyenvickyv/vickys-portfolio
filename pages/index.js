@@ -4,7 +4,6 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -15,7 +14,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import {IoLogoGithub } from 'react-icons/io5'
 import redirect from '../components/email'
 import Image from 'next/image'
 
@@ -83,9 +82,9 @@ const Home = () => (
             href="/projects"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
+            colorScheme="pink"
           >
-            DUNNO WHAT TO PUT HERE YET!
+            Projects!
           </Button>
         </Box>
       </Section>
@@ -122,7 +121,7 @@ const Home = () => (
           i ♥
         </Heading>
         <Paragraph>
-          Fashion, Art, K-dramas, Reading, Stand-up comedy, Concerts!
+          Fashion, art, k-dramas, reading, stand-up comedy, and going to concerts!
         </Paragraph>
       </Section>
 
@@ -135,7 +134,7 @@ const Home = () => (
             <Link href="https://github.com/nguyenvickyv" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="pink"
                 leftIcon={<IoLogoGithub />}
               >
                 @nguyenvickyv
@@ -147,7 +146,7 @@ const Home = () => (
           <ListItem>
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="pink"
                 leftIcon={<EmailIcon />}
                 onClick={redirect}
               >
