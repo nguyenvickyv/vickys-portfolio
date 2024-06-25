@@ -28,9 +28,10 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202023' : inactiveColor}
+      bg={active ? 'pink' : undefined}
+      color={active ? '#00000' : inactiveColor}
       target={target}
+      borderRadius="md"
       {...props}
     >
       {children}
@@ -80,6 +81,7 @@ const Navbar = props => {
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
+
           <LinkItem
             target="_blank"
             href="https://github.com/nguyenvickyv/vickys-portfolio"

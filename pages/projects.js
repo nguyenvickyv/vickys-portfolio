@@ -3,10 +3,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
 import PGTPP from '../public/images/projects/PGTPP.png'
-
+import portfolioSS from '../public/projects/portfolioSS.png'
 
 const projects = () => (
   <Layout title="Projects">
@@ -27,7 +25,7 @@ const projects = () => (
           <WorkGridItem
             id="Umeet"
             title="Umeet"
-            thumbnail={thumbFourPainters}
+            thumbnail={PGTPP}
           >
             Contributed to the development of UMeet, a mobile app fostering
             connections among college students with shared classes and clubs
@@ -35,7 +33,7 @@ const projects = () => (
         </Section>
 
         <Section delay={0.1}>
-          <WorkGridItem id="portfolio" thumbnail={thumbMenkiki} title="Portfolio">
+          <WorkGridItem id="portfolio" thumbnail={portfolioSS} title="Portfolio" href="/">
             This portfolio is my newest project I've been working on!
           </WorkGridItem>
         </Section>
