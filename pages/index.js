@@ -14,7 +14,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import {IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub } from 'react-icons/io5'
 import redirect from '../components/email'
 import Image from 'next/image'
 
@@ -29,7 +29,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I'm Vicky! I am an aspiring software engineer studying Computer Science at the University of Houston •ᴗ•.
+        Hello, I&apos;m Vicky! I am an aspiring software engineer studying Computer Science at the University of Houston •ᴗ•.
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -89,7 +89,7 @@ const Home = () => (
         </Box>
       </Section>
 
-      <Section delay={0.2}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
@@ -118,13 +118,12 @@ const Home = () => (
       </Section>
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          i ♥
+          I ♥
         </Heading>
         <Paragraph>
           Fashion, art, k-dramas, reading, stand-up comedy, and going to concerts!
         </Paragraph>
       </Section>
-
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           where to find me ⊹₊ ⋆
@@ -150,7 +149,7 @@ const Home = () => (
                 leftIcon={<EmailIcon />}
                 onClick={redirect}
               >
-                @nguyenvickyv
+                Email Me Here!
               </Button>
           </ListItem>
         </List>

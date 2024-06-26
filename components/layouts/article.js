@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 import { GridItemStyle } from '../grid-item'
 
 const variants = {
@@ -19,6 +20,13 @@ const Layout = ({ children, title }) => {
       style={{ position: 'relative' }}
     >
       <>
+        {title && (
+          <Head>
+            <title>{t}</title>
+            <meta name="twitter:title" content={t} />
+            <meta property="og:title" content={t} />
+          </Head>
+        )}
         {children}
 
         <GridItemStyle />
