@@ -22,13 +22,6 @@ const Projects = () => (
         </Section>
 
         <Section delay={0.1}>
-          <WorkGridItem id="Umeet" title="Umeet" thumbnail={PGTPP}>
-            Contributed to the development of UMeet, a mobile app fostering
-            connections among college students with shared classes and clubs.
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
           <WorkGridItem id="portfolio" thumbnail={portfolioSS} title="Portfolio" href="/">
             This portfolio is my newest project I&apos;ve been working on!
           </WorkGridItem>
