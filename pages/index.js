@@ -149,7 +149,7 @@ const Home = () => (
                 leftIcon={<EmailIcon />}
                 onClick={redirect}
               >
-                Email Me Here!
+                Email me here!
               </Button>
           </ListItem>
         </List>
